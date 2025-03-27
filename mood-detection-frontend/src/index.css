@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Global Styles */
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  font-family: Arial, sans-serif !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Full-screen container */
+div {
+  min-height: 100vh !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, #667eea, #764ba2) !important;
+  color: #fff !important;
+  transition: background 0.5s ease-in-out !important;
+}
+
+/* Card container */
+div > div {
+  background: rgba(0, 0, 0, 0.85) !important;
+  padding: 40px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6) !important;
+  max-width: 600px !important;
+  width: 90% !important;
+  text-align: center !important;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px !important;
+  font-weight: bold !important;
+  color: #f1c40f !important;
+}
+
+h2 {
+  font-size: 28px !important;
+}
+
+/* Webcam styling */
+webcam {
+  border: 5px solid #f1c40f !important;
+  border-radius: 10px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Buttons */
+button {
+  padding: 14px 28px !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  background: #4caf50 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: background 0.3s ease !important;
+}
+
+button:hover {
+  background: #45a049 !important;
+}
+
+button:disabled {
+  background: #aaa !important;
+  cursor: not-allowed !important;
+}
+
+/* Playlist button */
+a {
+  display: inline-block !important;
+  margin: 15px 0 !important;
+  padding: 12px 24px !important;
+  background: #1db954 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 8px !important;
+  transition: background 0.3s !important;
+}
+
+a:hover {
+  background: #17a94d !important;
+}
+
+/* Quote text */
+p {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: #ccc !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  div > div {
+    padding: 25px !important;
+    width: 95% !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  button, a {
+    width: 100% !important;
+  }
 }

@@ -1,0 +1,135 @@
+/* FaceDetection.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Background Container */
+.min-h-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #1e1e1e, #292929);
+}
+
+/* Main Wrapper */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1100px;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+}
+
+/* Webcam Container */
+.webcam-container {
+  flex: 1;
+  max-width: 45%;
+  text-align: center;
+}
+
+.webcam-container video {
+  width: 100%;
+  border-radius: 12px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Capture Button */
+.capture-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #1db954;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.capture-btn:hover {
+  background-color: #17a34a;
+  transform: scale(1.05);
+}
+
+/* Results Section */
+.results-container {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Mood Box */
+.mood-box {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Spotify Button */
+.spotify-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1db954;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.spotify-btn:hover {
+  background-color: #17a34a;
+  transform: scale(1.05);
+}
+
+/* Quote Styling */
+.quote {
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+  }
+  .webcam-container, .results-container {
+    max-width: 100%;
+  }
+}

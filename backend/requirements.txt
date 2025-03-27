@@ -4,3 +4,11 @@ scikit-learn==1.4.0
 numpy==1.26.0
 pandas==2.2.0
 requests==2.31.0
+Flask
+flask-cors
+numpy
+pandas
+requests
+Pillow
+opencv-python
+deepface
